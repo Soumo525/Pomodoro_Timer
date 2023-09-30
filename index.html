@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Pomodoro Timer</h1>
+
+    <p class="timer" id="timer">25 : 00</p>
+    <div class="embed">
+      <iframe style="border-radius: 12px"
+        src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZeKCadgRdKQ?utm_source=generator&theme=0" width="80%"
+        height="152" frameborder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    <div class="button-wrapper">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+      <button id="reset">Reset</button>
+      <div>
+        <button id="wrok">Wrok</button>
+        <button id="break">Break</button>
+      </div>
+
+    </div>
+
+
+    <div class="noteOne">
+      <h1>Note</h1>
+      <p class="info-text">Double click on a note to remove it</p>
+    </div>
+    <!-- <audio id="myaudio">
+            <source src="Asset/ios_17_radial.mp3">
+        </audio> -->
+
+
+  </div>
+
+  <!-- Note -->
+
+  <div class="app" id="app">
+    <!--  <textarea  cols="30" rows="10" class="note" placeholder="Empty Note"></textarea> -->
+    <button class="btn" id="btn">+</button>
+  </div>
+
+  <!-- Todo -->
+  <div class="containerTodo">
+
+    <div class="todo">
+      <h2>To-Do List</h2>
+      <div class="row">
+        <input type="text" id="input" placeholder="Add Your text" />
+        <button id="btnNew">Add</button>
+      </div>
+      <ul id="list">
+        <!-- <li id="listBox">T1</li> -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

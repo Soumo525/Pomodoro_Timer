@@ -1,0 +1,249 @@
+body {
+    background-image: url("Asset/aa.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .embed {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 25%;
+  }
+  
+  .container {
+    
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+  
+  .timer {
+    font-size: 72px;
+    color: #2c3e50;
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+  
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    opacity: 0.7;
+  }
+  
+  .button-wrapper {
+    position: absolute;
+    left: 695px;
+  }
+  
+  #start {
+    background-color: #27ae60;
+  }
+  
+  #stop {
+    background-color: #c0392b;
+  }
+  
+  #reset {
+    background-color: #7f8c8d;
+  }
+  
+  #wrok {
+    background-color: rgb(0, 183, 255);
+  }
+  
+  #break {
+    background-color: #6888a8;
+  }
+  
+  /* Note */
+  
+  .noteOne {
+    position: absolute;
+    top: 470px;
+    left: 80px;
+    width: 20%;
+    color: #2c3e50;
+  }
+  
+  /* .info-text{
+      text-align: center;
+      color: darkblue;
+      font-size: 18px;
+  
+  } */
+  .app {
+    top: 150px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 40px;
+    justify-content: center;
+    padding: 110px;
+  }
+  
+  .note {
+    padding: 17x;
+    border-radius: 15px;
+    resize: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    height: 200px;
+    color: darkblue;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+  }
+  
+  .note::placeholder {
+    color: gray;
+    opacity: 30%;
+    text-align: center;
+  }
+  
+  .note:hover,
+  .note:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 300ms ease;
+  }
+  
+  .btn {
+    height: 200px;
+    border-color: rgba(255, 255, 255, 0.37);
+    background: rgba(255, 255, 255, 0.27);
+    border-radius: 15px;
+    font-size: 70px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: rgb(255, 255, 255, 0.55);
+    color: rgb(0, 0, 0, 0.6);
+    transition: all 300ms ease;
+  }
+  
+  /* Todo */
+  
+  .containerTodo {
+    position: absolute;
+    top: 8px;
+    right: 5%;
+    /* color: #27ae60; */
+  }
+  
+  .todo {
+    width: 100%;
+    max-width: 600px;
+    background: #d4d2d2;
+    opacity: 80%;
+    margin: auto;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+  }
+  
+  .todo h2 {
+    color: #27ae60;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+  }
+  
+  input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  
+  button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+  }
+  
+  ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  ul li::before {
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(Asset/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    bottom: 8.5px;
+  }
+  
+  
+  
+  ul li.check {
+    color: #555;
+    text-decoration: line-through;
+  }
+  
+  ul li.check::before {
+    background-image: url(Asset/checked.png);
+  }
+  
+  
+  ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  
+  ul li span:hover {
+    background: #edeef0;
+  }
